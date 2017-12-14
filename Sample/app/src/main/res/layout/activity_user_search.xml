@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#EFEFF3"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar_search"/>
+
+    <include
+        android:id="@+id/rlResult"
+        layout="@layout/list_search_user_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:text="@string/tip_user_id_not_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="180dp"
+        android:textColor="#6E6F78"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+</LinearLayout>

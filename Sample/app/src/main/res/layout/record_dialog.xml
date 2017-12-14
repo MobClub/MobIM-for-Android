@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_recordview"
+    android:padding="20dp"
+    android:layout_width="250dp"
+    android:gravity="center"
+    android:layout_height="240dp">
+    <ImageView
+        android:id="@+id/recorderVolume"
+        android:src="@drawable/recorder_volume3"
+        android:layout_width="90dp"
+        android:layout_height="90dp"/>
+    <TextView
+        android:id="@+id/txtRemain"
+        android:textSize="50dp"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txtTip"
+        android:textColor="#ffffff"
+        android:text="@string/songkai_send"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

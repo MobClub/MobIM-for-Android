@@ -1,0 +1,7 @@
+apply plugin: 'com.android.application'
+apply from: '../buildCommon.gradle'
+
+dependencies {
+    compile 'com.android.support:support-v4:25.0.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+}

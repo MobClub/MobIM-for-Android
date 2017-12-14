@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <View
+        android:visibility="invisible"
+        android:id="@+id/txtFromAvatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+       />
+
+    <RelativeLayout
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="7"
+        android:id="@+id/layoutInfor"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/igvReSend"
+            android:src="@drawable/warn"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/layoutTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/layoutTip"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+        <LinearLayout
+            android:id="@+id/layoutTip"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/igvUnRead"
+                android:background="@drawable/circle_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"/>
+            <TextView
+                android:layout_marginTop="6dp"
+                android:id="@+id/txtDuration"
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/msg_back"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            />
+        <ImageView
+            android:id="@+id/igvAudio"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/audio_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <ImageView
+
+        android:id="@+id/txtSendAvatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_group"/>
+</LinearLayout>

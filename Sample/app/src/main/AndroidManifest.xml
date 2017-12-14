@@ -1,0 +1,111 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionName="1.0.1"
+          android:versionCode="2017111401"
+          package="com.mob.demo.mobim">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name="com.mob.demo.mobim.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNormal">
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <provider
+            android:authorities="com.mob.demo.mobim.fileprovider"              android:name="android.support.v4.content.FileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"/>
+        </provider>
+        <activity
+            android:name=".ui.UpdateUserInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.GroupPickUserActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ChatActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.UserSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity
+            android:name=".ui.GroupListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.GroupSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity
+            android:name=".ui.GroupCreateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity
+            android:name=".ui.GroupAddUserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".ui.ReminderListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ChatDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ReminderDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.UserDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ImagePickerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.InputForResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:process=":mobservice"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <!-- mob -->
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="moba6b6c6d6"/>
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="b89d2427a3bc7ad1aea1e1e8c1d36bf3"/>
+    </application>
+
+</manifest>

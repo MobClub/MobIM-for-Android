@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 定义一个动画帧，Drawable为img0，持续时间50毫秒 -->
+    <item android:drawable="@drawable/playrevaudio1" android:duration="300" />
+    <item android:drawable="@drawable/playrevaudio2" android:duration="300" />
+    <item android:drawable="@drawable/playrevaudio3" android:duration="300" />
+</animation-list>

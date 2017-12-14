@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name">MobIM</string>
+
+    <string name="tab_conversation">会话</string>
+    <string name="tab_contacts">通讯录</string>
+    <string name="tab_mine">我的</string>
+    <string name="txt_avatar">头像</string>
+    <string name="txt_user_name">昵称</string>
+    <string name="txt_user_id">用户ID（不可修改，长按可复制）</string>
+    <string name="txt_black_list">黑名单</string>
+    <string name="txt_cancel">取消</string>
+    <string name="txt_ok">确认</string>
+    <string name="txt_finish">完成</string>
+    <string name="txt_remove">移除</string>
+    <string name="txt_join">加入</string>
+    <string name="txt_group">群组</string>
+    <string name="txt_create_group">新建群组</string>
+    <string name="txt_my_group">我的群组</string>
+    <string name="txt_invite_friends">邀请好友</string>
+    <string name="txt_name">名称</string>
+    <string name="txt_profile">简介</string>
+    <string name="txt_select_contacts">选择联系人</string>
+    <string name="txt_confirm_create_group">确认建群（%s人）</string>
+    <string name="txt_reminder">提醒号</string>
+    <string name="txt_notification_prompt">通知提醒</string>
+    <string name="txt_msg_no_disturbing">消息免打扰</string>
+    <string name="txt_send_msg">发送消息</string>
+    <string name="txt_i_known">我知道了</string>
+
+    <string name="title_update_user_avatar">选择你的头像</string>
+    <string name="title_update_user_name">修改昵称</string>
+
+    <string name="toast_exit_app">再按一下后退键退出</string>
+    <string name="toast_id_copied">用户ID已复制</string>
+
+    <string name="hint_input_user_name">请输入昵称</string>
+    <string name="hint_input_user_id">请输入用户ID</string>
+    <string name="hint_input_group_id">请输入群组ID</string>
+    <string name="hint_input_group_name">请输入群组名称</string>
+    <string name="hint_input_group_profile">请输入群组简介</string>
+    <string name="hint_input_user_id_to_add_chat_user">输入用户ID添加聊天对象</string>
+    <string name="hint_input_group_id_to_add_group">输入群组ID添加群组</string>
+
+    <string name="tip_user_id_not_found">未找到此用户ID</string>
+    <string name="tip_group_id_not_found">未找到此群组ID</string>
+    <string name="tip_bar_has_added_user">已添加的用户</string>
+    <string name="tip_account">账号说明\nMOBIM并不自带用户系统，用户成功登陆您自有用户系统后，开发者可对接登录MOBIM中相对应的用户。
+        \n本演示DEMO直接使用设备ID作为已登录成功的标识</string>
+    <string name="tip_confirm_to_add_to_black_list">确认将TA加入黑名单？</string>
+    <string name="input_hint">请输入消息...</string>
+    <string name="press_speek">按住说话</string>
+    <string name="songkai_send">松开即可结束发送</string>
+    <string name="too_short_tosend">录制的声音太短无法发送</string>
+    <string name="camerapic">相册胶卷</string>
+    <string name="selects">完成(%s)</string>
+    <string name="Video_footage">视频</string>
+    <string name="selectmore9">选择图片不能超过9张</string>
+    <string name="nomore">没有更多了</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="send">发送</string>
+    <string name="saveok">保存成功</string>
+    <string name="savefail">保存失败</string>
+
+    <string name="toast_get_user_failed">获取用户信息失败</string>
+    <string name="tip_load_ing">加载中...</string>
+    <string name="tip_load_failed">加载失败</string>
+    <string name="btn_re_load">重新加载</string>
+    <string name="tip_im_connect_ing">IM连接中...</string>
+    <string name="tip_im_connect_success">IM连接成功</string>
+    <string name="tip_im_connect_failed">IM连接失败，帐号异常（被移除了、未登录等）</string>
+    <string name="tip_im_connect_interrupt_account_error">IM连接中断了，帐号在其他设备登录了</string>
+    <string name="tip_im_connect_interrupt_net_error">IM连接中断了（网络故障或者服务器故障等原因）</string>
+    <string name="chat_detail">聊天详情</string>
+    <string name="showallusers">查看全部用户</string>
+    <string name="groupname">名称</string>
+    <string name="groupid">群组ID（长按可复制）</string>
+    <string name="summary">简介</string>
+    <string name="notice">公告</string>
+    <string name="igroupnick">我在本群昵称</string>
+    <string name="nomsg">消息免打扰</string>
+    <string name="grouponwerchange">群组转让</string>
+    <string name="delandexit">删除并退出</string>
+    <string name="groupdetail">群组详情(%d人)</string>
+    <string name="nickofgroup">我在本群的昵称</string>
+    <string name="wancheng">完成</string>
+    <string name="groupofname">群名</string>
+    <string name="edit">编辑</string>
+    <string name="onlyowneredit">只有群主才可以编辑</string>
+    <string name="groupsummarylength">群简介不得超过140个字</string>
+    <string name="groupnoticlength">群公告不得超过140个字</string>
+    <string name="coped">群组ID已复制</string>
+    <string name="exitgroupmember">删除退出后您将不再是此群的成员，确认删除退出？</string>
+    <string name="exitgroupower">您是此群群主，删除并退出后此群将会解散，确认删除退出？</string>
+
+    <string name="tip_login_ing">登录中...</string>
+    <string name="tip_login_failed">登录失败(请点击重试)</string>
+    <string name="pselect">请选择</string>
+    <string name="takecamera">拍照</string>
+    <string name="takevideo">摄像</string>
+
+    <string name="tip_friends_not_found">暂无好友</string>
+    <string name="tip_group_create_success">创建成功</string>
+    <string name="tip_group_create_failed">创建失败</string>
+    <string name="tip_group_members_null">群成员不能为空</string>
+    <string name="tip_delete_friend">确定删除该好友么？</string>
+    <string name="tip_file_download">下载中</string>
+    <string name="tip_file_downloaded">下载完成</string>
+    <string name="tip_file_downloadfail">下载失败</string>
+
+    <string name="changegroupowner">选择新群主</string>
+    <string name="delgroupmember">删除成员</string>
+    <string name="addgroupmember">添加成员</string>
+    <string name="confirmchange">确认转让</string>
+    <string name="del">删除</string>
+    <string name="sumpeople">%d人</string>
+    <string name="tipempty">选择为空</string>
+    <string name="dosucess">执行成功</string>
+    <string name="confirm">确认</string>
+    <string name="tip_delete_conversation">确定删除该会话么？</string>
+    <string name="tip_play_fail">网络或资源问题,播放失败，请稍后重试</string>
+    <string name="pic">图片</string>
+    <string name="video">视频</string>
+    <string name="audio">语音</string>
+    <string name="attach">附件</string>
+    <string name="creategroupok">建群成功</string>
+    <string name="invitejoingroup" formatted="false">%s 邀请了 %s 入群</string>
+    <string name="invite" formatted="false">%s 邀请了 %s 入群</string>
+    <string name="changegroupname" formatted="false">"%s" 修改群名为 %s </string>
+    <string name="somejoingroup">"%s" 加入了群聊 </string>
+    <string name="somejoingroupchat">有人加入了群聊 </string>
+    <string name="groupnamechanged">群名已修改</string>
+    <string name="groupnoticchange">群通知已修改</string>
+    <string name="somegroupnoticchange" formatted="false">"%s" 修改了群公告:"%s"</string>
+    <string name="someisnewgroupowner">"%s" 成为新群主</string>
+    <string name="someleavegroup">"%s"离开了群</string>
+    <string name="youberomoved">你已经被移除</string>
+    <string name="downloading">下载中</string>
+    <string name="downloaded">下载完成</string>
+    <string name="remaintime">"%d"S</string>
+    <string name="remaintimetip">剩余时间倒计时</string>
+    <string name="copy">复制</string>
+    <string name="delete">删除</string>
+    <string name="groupnamenotlengthten">群名不可超过10个字</string>
+    <string name="mygroupnicknotlengthten">我在本群昵称不得超过10个字</string>
+
+    <string name="attach_image">[图片]</string>
+    <string name="attach_file">[文件]</string>
+    <string name="attach_audio">[语音]</string>
+    <string name="attach_video">[视频]</string>
+    <string name="attach_location">[位置]</string>
+
+    <string name="hint_add_ed">已添加</string>
+    <string name="hint_join_ed">已加入</string>
+    <string name="toast_remove_success">移除成功</string>
+    <string name="toast_remove_failed">移除失败</string>
+    <string name="takephoto">拍照</string>
+    <string name="file">文件</string>
+    <string name="yesdaytime">昨天 "%s"</string>
+    <string name="copynow">已复制</string>
+
+    <string name="delallgroupmember">群成员已被全部删除，群组已自动解散~</string>
+    <string name="groupareremoved">群已被 "%s" 解散了</string>
+    <string name="permissiontip">没有授予相关权限本功能限制使用，如需使用请在应用设置中设置相关权限后，重新启动应用后再使用</string>
+    <string name="filetoobig">抱歉，不支持发送太大的文件</string>
+
+    <string name="toast_permission_deny">用户禁用了相关权限，导致功能无法使用</string>
+    <string name="txt_time_format_m_d">MM月dd日</string>
+    <string name="tiptexttoolong">当前字数%d，字数已经超过5000，请重新编辑后发送</string>
+</resources>

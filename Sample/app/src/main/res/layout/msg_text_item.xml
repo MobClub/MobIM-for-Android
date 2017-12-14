@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/txtFromAvatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="7"
+        android:orientation="horizontal"
+        android:gravity="right|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/igvReSend"
+            android:src="@drawable/warn"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/msg_back"
+            android:textColor="#FFFFFF"
+            android:gravity="center|left"
+            android:paddingRight="2dp"
+            android:padding="8dp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/txtSendAvatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_group"/>
+</LinearLayout>

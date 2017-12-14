@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#EFEFF3"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:id="@+id/tvNick"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/chat_detail"
+            android:textColor="#000000"
+            android:textSize="17sp"/>
+        <Button
+            android:layout_centerVertical="true"
+            android:id="@+id/btnBack"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <GridView
+                android:listSelector="#00000000"
+                android:padding="4dp"
+                android:id="@+id/gdvFriends"
+                android:numColumns="5"
+                android:alwaysDrawnWithCache="false"
+                android:horizontalSpacing="2dp"
+                android:verticalSpacing="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </GridView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="1"
+                android:text="@string/nomsg"
+                android:textColor="#000000"/>
+
+            <Switch
+                android:id="@+id/swhNoMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="50dp"
+                android:textOn="  "
+                android:textOff="  "
+                android:thumb="@drawable/thumb"
+                android:track="@drawable/track"
+                />
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

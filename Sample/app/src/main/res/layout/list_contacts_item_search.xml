@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#EFEFF3"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvInput"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/round_white_4"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/hint_input_user_id_to_add_chat_user"
+        android:textColor="#A6A6B2"
+        android:textSize="12sp"/>
+</LinearLayout>

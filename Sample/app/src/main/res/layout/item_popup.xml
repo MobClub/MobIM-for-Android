@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="horizontal"
+    >
+
+    <Button
+        android:padding="4dp"
+        android:id="@+id/btnCopy"
+        android:layout_width="wrap_content"
+        android:background="@null"
+        android:layout_height="wrap_content"
+        android:text="@string/copy"
+        android:textSize="18sp" />
+
+    <Button
+        android:padding="4dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/btnDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="@string/del"
+        android:textSize="18sp" />
+
+</LinearLayout>
