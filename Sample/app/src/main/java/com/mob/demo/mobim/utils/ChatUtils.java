@@ -771,24 +771,29 @@ public class ChatUtils {
 	}
 
 	private static void reSendNow(final Activity context, final IMMessage imMessage,
-								final QuickAdapter<SparseArray<Object>> qickAdapter, final int position, final int itemViewType) {
+				final QuickAdapter<SparseArray<Object>> quickAdapter, final int position, final int itemViewType) {
+		updateItemMessageStatus(context, imMessage, quickAdapter, position, itemViewType, IMMessage.STATUS_SEND_ING);
 		MobIM.getChatManager().sendMessage(imMessage, new MobIMCallback<Void>() {
 			public void onSuccess(Void result) {
-				imMessage.setStatus(IMMessage.STATUS_SUCCESS);
-				final SparseArray<Object> itemnow = qickAdapter.getItem(position);
-				MsgItem msgItem = (MsgItem) itemnow.get(itemViewType);
-				msgItem.setImMessage(imMessage);
-				itemnow.put(itemViewType, msgItem);
-				context.runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						qickAdapter.setData(position, itemnow);
-					}
-				});
+				updateItemMessageStatus(context, imMessage, quickAdapter, position, itemViewType, IMMessage.STATUS_SUCCESS);
 			}
 
 			public void onError(int code, String message) {
+				updateItemMessageStatus(context, imMessage, quickAdapter, position, itemViewType, IMMessage.STATUS_FAILED);
+			}
+		});
+	}
 
+	private static void updateItemMessageStatus(Activity context, IMMessage imMessage, final QuickAdapter<SparseArray<Object>> quickAdapter,
+				final int position, int itemViewType, int status) {
+		imMessage.setStatus(status);
+		final SparseArray<Object> item = quickAdapter.getItem(position);
+		MsgItem msgItem = (MsgItem) item.get(itemViewType);
+		msgItem.setImMessage(imMessage);
+		item.put(itemViewType, msgItem);
+		context.runOnUiThread(new Runnable() {
+			public void run() {
+				quickAdapter.setData(position, item);
 			}
 		});
 	}
